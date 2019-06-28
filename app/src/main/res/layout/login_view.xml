@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/reminb"
+    >
+   
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:orientation="vertical"
+         android:gravity="right"
+           
+         >
+         <Button 
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:background="@drawable/img_btn_popup_close"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="15dp"
+             android:id="@+id/login_close_btn"
+             />
+         
+     </LinearLayout>
+     <EditText 
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="@drawable/seekshapa"
+         android:layout_margin="20dp"
+         android:hint="用户名"
+         android:id="@+id/login_username_edit"
+         />
+     
+      <EditText 
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="@drawable/seekshapa"
+         android:layout_margin="20dp"
+         android:hint="密码"
+         android:password="true"
+             android:id="@+id/login_password_edit"
+         />
+      
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          <View 
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="1dp"
+              />
+          <Button 
+              android:layout_width="100dp"
+              android:layout_height="40dp"
+              android:background="@drawable/btn_selector"
+              android:text="登录"
+              android:textColor="#27aaff"
+              android:textSize="13sp"
+               android:id="@+id/login_btn"
+              />
+            <View 
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="1dp"
+              />
+          <Button 
+              android:layout_width="100dp"
+              android:layout_height="40dp"
+              android:background="@drawable/btn_selector"
+              android:text="新用户"
+              android:textColor="#27ffaa"
+              android:textSize="13sp"
+               android:id="@+id/login_newuser_btn"
+              />
+          <View 
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="1dp"
+              />
+      </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/remin"
+    >
+     <com.project.util.MyView 
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/myserfaceview"
+     android:keepScreenOn="true"
+     />
+     <include 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/control_view"
+  
+    />
+     
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:id="@+id/control_layout"
+     
+        >
+        
+         <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/re"
+        android:gravity="center"
+       
+     
+        >
+        <Button 
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/hetiao"
+            android:text="单人游戏"
+             android:id="@+id/start_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        
+         
+         <Button 
+            android:layout_width="150dp"
+           android:layout_height="40dp"
+            android:background="@drawable/hetiao"
+            android:text="人物战绩"
+            android:id="@+id/score_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+           <Button 
+            android:layout_width="150dp"
+           android:layout_height="40dp"
+            android:background="@drawable/hetiao"
+            android:text="游戏设置"
+            android:id="@+id/set_btn"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+           
+            <Button 
+            android:layout_width="150dp"
+           android:layout_height="40dp"
+            android:background="@drawable/hetiao"
+            android:text="登录"
+            android:id="@+id/admin_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+           <Button 
+            android:layout_width="150dp"
+           android:layout_height="40dp"
+            android:background="@drawable/hetiao"
+            android:text="退出游戏"
+            android:id="@+id/eixt_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+            </LinearLayout> 
+    </LinearLayout> 
+    <include 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/regist_view"
+    android:visibility="gone"
+     android:id="@+id/regist_layout"
+    />
+     <include 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/login_view"
+    android:visibility="gone"
+    android:id="@+id/login_layout"
+    />
+ 
+</FrameLayout>
